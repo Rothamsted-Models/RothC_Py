@@ -117,8 +117,6 @@ def decomp(timeFact, DPM,RPM,BIO,HUM, IOM, SOC, DPM_Rage, RPM_Rage, \
       
     exc = np.exp(-conr*tstep) 
       
-    #IOM_Rage =50000.0
-      
  
 # decomposition
     DPM1 = DPM[0] * np.exp(-RateM*DPM_k*tstep)
@@ -134,6 +132,7 @@ def decomp(timeFact, DPM,RPM,BIO,HUM, IOM, SOC, DPM_Rage, RPM_Rage, \
       
     
     x=1.67*(1.85+1.60*np.exp(-0.0786*clay))
+                    
 # proportion C from each pool into CO2, BIO and HUM      
     DPM_co2 = DPM_d * (x / (x+1))
     DPM_BIO = DPM_d * (0.46 / (x+1))
@@ -379,6 +378,6 @@ for  i in range(timeFact, nsteps):
 output_years = pd.DataFrame(year_list, columns=["Year","Month","DPM_t_C_ha","RPM_t_C_ha","BIO_t_C_ha","HUM_t_C_ha","IOM_t_C_ha","SOC_t_C_ha","deltaC"])     
 output_months = pd.DataFrame(month_list, columns=["Year","Month","DPM_t_C_ha","RPM_t_C_ha","BIO_t_C_ha","HUM_t_C_ha","IOM_t_C_ha","SOC_t_C_ha","deltaC"])
 
-output_years.to_csv("output_years.csv", index = False)
-output_months.to_csv("output_months.csv", index = False)
+output_years.to_csv("year_results.csv", index = False)
+output_months.to_csv("month_results.csv", index = False)
 
