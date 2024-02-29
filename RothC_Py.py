@@ -267,7 +267,7 @@ def RothC(timeFact, DPM,RPM,BIO,HUM,IOM, SOC, DPM_Rage, RPM_Rage, BIO_Rage, HUM_
 # program RothC_Python
 import os
 print(os.getcwd())
-os.chdir("B:/RothC_versions/RothC_examples_for_Git/Python/") # Change to path of RothC_input.dat
+os.chdir(["INSERT FILE PATH NAME") # Change to path of RothC_input.dat
 print(os.getcwd())
    
 # set initial pool values   
