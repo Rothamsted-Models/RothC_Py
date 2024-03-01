@@ -1,4 +1,4 @@
-# The Rothamsted carbon model (RothC)
+# The Rothamsted carbon model Python version (RothC_Py)
 
 ## Purpose
 
