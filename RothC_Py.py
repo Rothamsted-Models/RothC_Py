@@ -1,8 +1,11 @@
 ######################################################################################################################
-#    The Rothamsted Carbon Model: RothC
-#    Developed by Jenkinson and Coleman
-#        
-#    This version was coded by Alice Milne, Jonah Prout and Kevin Coleman 29/02/2024
+# 
+#  RothC python version    
+#
+#  This python version was translated from the Fortran code by Alice Milne, Jonah Prout and Kevin Coleman 29/02/2024
+#
+#  The Rothamsted Carbon Model: RothC
+#  Developed by David Jenkinson and Kevin Coleman
 #
 #  INPUTS: 
 #
